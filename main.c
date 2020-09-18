@@ -37,7 +37,7 @@ int main(void)
  scanf("%d", &num);
  printf("Sum is %d \n", sum_n(num));
  int tot = sum_n(num);
- char *string = readline("Enter a string:");
+ char *string = readline("Enter a string: ");
  
  print_n(string, tot);
 
