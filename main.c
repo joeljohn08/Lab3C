@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <readline/readline.h>
 int sum(int n);
 void print_n(const char *s, int n);
 
@@ -32,13 +33,12 @@ void print_n(const char *s, int n)
 int main(void) 
 {
  int num;
- char *string;
  printf("Enter an int: ");
  scanf("%d", &num);
- printf("Sum is %d ", sum_n(num));
+ printf("Sum is %d \n", sum_n(num));
  int tot = sum_n(num);
- printf("Enter a string: ");
- scanf("%c", string);
+ char *string = readline("Enter a string:");
+ 
  print_n(string, tot);
 
   return 0;
